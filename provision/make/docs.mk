@@ -2,7 +2,7 @@
 # See ./CONTRIBUTING.rst
 #
 
-FILE_README=$(ROOT_DIR)/README.rst
+FILE_README=$(ROOT_DIR)/README.md
 
 docs:
 	make docs.help
@@ -11,7 +11,7 @@ docs.help:
 	@echo '    Docs:'
 	@echo ''
 	@echo '        docs.show                  Show restview README'
-	@echo '        docs.make                  Make documentation html'	
+	@echo '        docs.make                  Make documentation html'
 	@echo '        docs.terraform             generated docs for terraform'
 	@echo ''
 
