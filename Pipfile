@@ -4,10 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-ansible-vault = "*"
 docker-compose = "*"
-restview = "*"
-rst = "*"
 caniusepython3 = "*"
 isort = "*"
 mypy = "*"
@@ -26,9 +23,14 @@ bumpversion = "*"
 bumplus = "*"
 pre-commit = "*"
 doc8 = "*"
+bridgecrew = "*"
+mkdocs = "*"
+click-man = "*"
+pygments = "*"
+pymdown-extensions = "*"
+mkdocs-material = "*"
 
 [packages]
-
 
 [scripts]
 test = "pytest"
