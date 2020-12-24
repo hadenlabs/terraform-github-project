@@ -41,7 +41,6 @@ This document gives an overview of variables used in the platform of the terrafo
 
 | Name   | Version |
 | ------ | ------- |
-| aws    | n/a     |
 | github | >=2.9.2 |
 
 ## Inputs
@@ -51,16 +50,13 @@ This document gives an overview of variables used in the platform of the terrafo
 | body | body of project. | `string` | `""` | no |
 | columns | (Optional) The names of the columns. | `list(any)` | <pre>[<br> "Backlog",<br> "To Do",<br> "Do Today",<br> "In Progress",<br> "In Review",<br> "Approved",<br> "Done"<br>]</pre> | no |
 | name | The name of the project. | `string` | n/a | yes |
-| namespace | The namespace for project | `string` | n/a | yes |
 | repository_name | The name of the repository. | `string` | n/a | yes |
-| stage | the var for stage (Staging, Production) | `string` | n/a | yes |
-| tags | Tags | `map(any)` | `{}` | no |
 
 ## Outputs
 
-| Name    | Description |
-| ------- | ----------- |
-| project | n/a         |
+| Name    | Description                 |
+| ------- | --------------------------- |
+| project | output project name and url |
 
 ## Help
 
