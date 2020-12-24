@@ -1,11 +1,3 @@
-provider "github" {}
-
-provider "template" {}
-
-provider "null" {}
-
-provider "local" {}
-
 terraform {
   required_version = ">=0.13.0"
   required_providers {
@@ -31,6 +23,14 @@ terraform {
 
   }
 }
+
+provider "github" {}
+
+provider "template" {}
+
+provider "null" {}
+
+provider "local" {}
 
 resource "github_organization_project" "project" {
   name = title(var.name)
