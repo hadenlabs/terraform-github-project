@@ -160,3 +160,38 @@ resource "github_issue_label" "status_review_needed" {
   description = "The issue or PR needs to be reviewed"
   color       = "fbca04"
 }
+
+resource "github_issue_label" "status_backlog" {
+  repository  = var.repository_name
+  name        = "Backlog"
+  description = "Status Backlog"
+  color       = "fbca04"
+}
+
+resource "github_issue_label" "status_ready" {
+  repository  = var.repository_name
+  name        = "Ready"
+  description = "Status Ready"
+  color       = "fbca04"
+}
+
+resource "github_issue_label" "status_working" {
+  repository  = var.repository_name
+  name        = "Working"
+  description = "Status Working"
+  color       = "fbca04"
+}
+
+resource "github_issue_label" "status_review" {
+  repository  = var.repository_name
+  name        = "Review"
+  description = "Status Review"
+  color       = "fbca04"
+}
+
+resource "github_issue_label" "status_done" {
+  repository  = var.repository_name
+  name        = "Done"
+  description = "Status Done"
+  color       = "fbca04"
+}
