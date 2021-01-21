@@ -1,5 +1,5 @@
 #
-# See ./CONTRIBUTING.rst
+# See ./docs/contributing.md
 #
 
 FILE_README=$(ROOT_DIR)/README.md
