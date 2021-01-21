@@ -1,14 +1,6 @@
-terraform {
-  required_version = ">=0.13.0"
+locals {
+  tags = null
 }
-
-provider "github" {}
-
-provider "template" {}
-
-provider "null" {}
-
-provider "local" {}
 
 resource "github_organization_project" "project" {
   name = title(var.name)
