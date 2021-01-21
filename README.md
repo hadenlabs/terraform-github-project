@@ -34,7 +34,8 @@ This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) mod
 
 ```hcl
   module "main" {
-    source = "github.com/hadenlabs/terraform-github-project"
+    source = "hadenlabs/project/github"
+    version = "0.2.0"
 
     providers {
       github = github
