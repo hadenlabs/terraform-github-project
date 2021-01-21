@@ -1,7 +1,3 @@
-locals {
-  tags = null
-}
-
 resource "github_organization_project" "project" {
   name = title(var.name)
   body = var.body
