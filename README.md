@@ -36,6 +36,10 @@ This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) mod
   module "main" {
     source = "github.com/hadenlabs/terraform-github-project"
 
+    providers {
+      github = github
+    }
+
     name    = "terraform-github-project"
     body    = "project terraform github project."
     repository_name = module.repository_terraform_github_project.instance.name
@@ -56,14 +60,14 @@ This document gives an overview of variables used in the platform of the terrafo
 
 | Name | Version |
 |------|---------|
-| terraform | >=0.13.0 |
 | terraform | >= 0.13 |
+| github | >=4.3.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| github | n/a |
+| github | >=4.3.0 |
 
 ## Inputs
 
