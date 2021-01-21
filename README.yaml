@@ -59,6 +59,10 @@ usage: |-
     module "main" {
       source = "github.com/hadenlabs/terraform-github-project"
 
+      providers {
+        github = github
+      }
+
       name    = "terraform-github-project"
       body    = "project terraform github project."
       repository_name = module.repository_terraform_github_project.instance.name
