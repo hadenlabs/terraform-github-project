@@ -74,7 +74,7 @@ resource "github_issue_label" "priority_medium" {
 resource "github_issue_label" "priority_low" {
   repository  = var.repository_name
   name        = "priority/low"
-  description = "This issue can probably be picked up by anyone looking to contribute to the project, as an entry fix."
+  description = "This issue can probably be picked up by anyone looking to contribute to the project."
   color       = "0e8a16"
 }
 
