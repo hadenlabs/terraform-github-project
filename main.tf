@@ -13,5 +13,5 @@ resource "github_repository_project" "repository" {
   count      = try(var.repositories, null) != null ? length(var.repositories) : 0
   name       = lower(format("%s %s", var.name, element(var.repositories, count.index).repository))
   repository = element(var.repositories, count.index).repository
-  body       = element(var.repositories, count.index).body
+  body       = try(element(var.repositories, count.index).body, "")
 }
