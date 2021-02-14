@@ -16,5 +16,10 @@ module "main" {
   source          = "git://github.com/hadenlabs/terraform-github-project.git?ref=0.2.1"
   name            = var.project_name
   body            = var.project_body
-  repository_name = github_repository.dashboard.name
+  repositories    = [
+    {
+      repository = github_repository.dashboard.name
+      body = "description"
+    }
+  ]
 }
