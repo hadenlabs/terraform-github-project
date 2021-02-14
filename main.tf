@@ -10,7 +10,8 @@ resource "github_project_column" "project_backlog_column" {
 }
 
 resource "github_repository_project" "repository" {
-  name       = lower(format("%s %s", var.name, var.repository_name))
-  repository = var.repository_name
-  body       = ""
+  count      = try(var.repositories, null) != null ? length(var.repositories) : 0
+  name       = lower(format("%s %s", var.name, element(var.repositories, count.index).repository))
+  repository = element(var.repositories, count.index).repository
+  body       = element(var.repositories, count.index).body
 }

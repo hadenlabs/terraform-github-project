@@ -23,7 +23,11 @@ variable "columns" {
   ]
 }
 
-variable "repository_name" {
-  type        = string
-  description = "The name of the repository."
+variable "repositories" {
+  type = list(object({
+    repository = string
+    body       = string
+  }))
+  description = "The name of repositories."
+  default     = null
 }
