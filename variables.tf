@@ -10,7 +10,7 @@ variable "body" {
 }
 
 variable "columns" {
-  type        = list(any)
+  type        = list(string)
   description = "(Optional) The names of the columns."
   default = [
     "Backlog",
