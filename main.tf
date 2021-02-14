@@ -1,5 +1,5 @@
 resource "github_organization_project" "project" {
-  name = title(var.name)
+  name = lower(var.name)
   body = var.body
 }
 
@@ -10,7 +10,7 @@ resource "github_project_column" "project_backlog_column" {
 }
 
 resource "github_repository_project" "repository" {
-  name       = format("%s-%s", var.name, var.repository_name)
+  name       = lower(format("%s %s", var.name, var.repository_name))
   repository = var.repository_name
   body       = ""
 }
