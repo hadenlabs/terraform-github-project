@@ -13,7 +13,7 @@ module "main" {
     github = github
   }
 
-  source          = "git://github.com/hadenlabs/terraform-github-project.git?ref=0.2.1"
+  source          = "git://github.com/hadenlabs/terraform-github-project.git?ref=0.3.0"
   name            = var.project_name
   body            = var.project_body
   repositories    = [
