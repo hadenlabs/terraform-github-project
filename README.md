@@ -12,7 +12,9 @@
 
   -->
 
-# terraform-github-project [![Build Status](https://travis-ci.org/hadenlabs/terraform-github-project.svg?branch=master)](https://travis-ci.org/hadenlabs/terraform-github-project) [![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-github-project.svg)](https://travis-ci.org/hadenlabs/terraform-github-project/releases)
+# terraform-github-project
+
+[![Build Status](https://travis-ci.org/hadenlabs/terraform-github-project.svg?branch=main)](https://travis-ci.org/hadenlabs/terraform-github-project) [![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-github-project.svg)](https://travis-ci.org/hadenlabs/terraform-github-project/releases)
 
 Terraform module to provision an github project.
 
@@ -20,12 +22,14 @@ Terraform module to provision an github project.
 
 This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) modules of terraform.
 
+It's 100% Open Source and licensed under the [APACHE2](LICENSE).
+
 ## Usage
 
 ```hcl
   module "main" {
     source = "hadenlabs/project/github"
-    version = "0.2.1"
+    version = "0.3.0"
 
     providers = {
       github = github
@@ -33,8 +37,12 @@ This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) mod
 
     name    = "terraform-github-project"
     body    = "project terraform github project."
-    repository_name = module.repository_terraform_github_project.instance.name
-
+    repositories = [
+        {
+          repository = "name of repository"
+          body = "description"
+        },
+    ]
   }
 ```
 
@@ -100,9 +108,36 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 **NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
 
+### Versioning
+
+Releases are managed using github release feature. We use \[Semantic Versioning\](<http://semver.org>) for all the releases. Every change made to the code base will be referred to in the release notes (except for cleanups and refactorings).
+
 ## Copyright
 
 Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
+
+## License
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+See [LICENSE](LICENSE) for full details.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
 
 ## Trademarks
 
