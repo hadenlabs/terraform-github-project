@@ -66,8 +66,12 @@ usage: |-
 
       name    = "terraform-github-project"
       body    = "project terraform github project."
-      repository_name = module.repository_terraform_github_project.instance.name
-
+      repositories = [
+          {
+            repository = "name of repository"
+            body = "description"
+          },
+      ]
     }
   ```
 
