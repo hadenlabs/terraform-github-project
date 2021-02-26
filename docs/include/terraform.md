@@ -24,7 +24,6 @@ This document gives an overview of variables used in the platform of the terrafo
 | body | body of project. | `string` | `""` | no |
 | columns | (Optional) The names of the columns. | `list(string)` | <pre>[<br> "Backlog",<br> "To Do",<br> "Do Today",<br> "In Progress",<br> "In Review",<br> "Approved",<br> "Done"<br>]</pre> | no |
 | name | The name of the project. | `string` | n/a | yes |
-| repositories | The name of repositories. | <pre>list(object({<br> repository = string<br> body = string<br> }))</pre> | `null` | no |
 
 ## Outputs
 
