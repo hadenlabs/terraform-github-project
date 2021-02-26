@@ -29,7 +29,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 ```hcl
   module "main" {
     source = "hadenlabs/project/github"
-    version = "0.3.0"
+    version = "0.4.0"
 
     providers = {
       github = github
