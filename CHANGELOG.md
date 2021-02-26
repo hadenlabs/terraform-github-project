@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
+<a name="0.4.0"></a>
+
+## [0.4.0](https://github.com/hadenlabs/terraform-github-project/compare/0.3.0...0.4.0)
+
+> 2021-02-25
+
+### Code Refactoring
+
+- clean repository project ([#27](https://github.com/hadenlabs/terraform-github-project/issues/27))
+- actions make ([#25](https://github.com/hadenlabs/terraform-github-project/issues/25))
+- generator readme ([#25](https://github.com/hadenlabs/terraform-github-project/issues/25))
+- path lints to github ([#25](https://github.com/hadenlabs/terraform-github-project/issues/25))
+
 <a name="0.3.0"></a>
 
 ## [0.3.0](https://github.com/hadenlabs/terraform-github-project/compare/0.2.1...0.3.0)
