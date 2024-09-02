@@ -11,8 +11,8 @@
       "replacement": "{{BASEURL}}/docs"
     },
     {
-      "pattern": "^/example",
-      "replacement": "{{BASEURL}}/example"
+      "pattern": "^/",
+      "replacement": "{{BASEURL}}/"
     }
   ],
   "timeout": "20s",
