@@ -16,66 +16,46 @@ tags:
 categories:
   - terraform-modules/github
 
-company:
-  name: hadenlabs
-  description: |-
-    company labs
-  url: https://hadenlabs.com
-  github: https://github.com/hadenlabs
-  email: support@hadenlabs.com
-
-copyright:
-  name: Hadenlabs
-  url: https://hadenlabs.com
-
 email:
   support: support@hadenlabs.com
 
 # Logo for this project
-#logo: docs/logo.png
+# logo: docs/logo.png
 
 # License of this project
-license: 'APACHE2'
+license: "LGPL-3.0"
 
 # Canonical GitHub repo
 github_repo: hadenlabs/terraform-github-project
 
 # Badges to display
 badges:
-  - name: 'Build Status'
-    image: 'https://travis-ci.org/hadenlabs/terraform-github-project.svg?branch=main'
-    url: 'https://travis-ci.org/hadenlabs/terraform-github-project'
-  - name: 'Latest Release'
-    image: 'https://img.shields.io/github/release/hadenlabs/terraform-github-project.svg'
-    url: 'https://travis-ci.org/hadenlabs/terraform-github-project/releases'
+  - name: "Build Status"
+    image: "https://travis-ci.org/hadenlabs/terraform-github-project.svg?branch=main"
+    url: "https://travis-ci.org/hadenlabs/terraform-github-project"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/hadenlabs/terraform-github-project.svg"
+    url: "https://travis-ci.org/hadenlabs/terraform-github-project/releases"
+
+requirements: |-
+
+  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+  - [gomplate](https://github.com/hairyhenderson/gomplate)
+  - [terraform](https://github.com/hashicorp/terraform)
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
 
 # Short description of this project
 description: |-
   Terraform module to provision an github project.
 
-# How to use this project
-usage: |-
-  ```hcl
-    module "main" {
-      source = "hadenlabs/project/github"
-      version = "0.4.0"
+usages:
+  - docs/usage.md
 
-      providers = {
-        github = github
-      }
-
-      name    = "terraform-github-project"
-      body    = "project terraform github project."
-    }
-  ```
-
-  Full working example can be found in [example](./example) folder.
+examples:
+  - "docs/examples/common.md"
 
 include:
-  - 'docs/include/targets.md'
-  - 'docs/include/terraform.md'
-
-# Contributors to this project
-contributors:
-  - name: 'Luis Mayta'
-    github: 'luismayta'
+  - "docs/include/targets.md"
+  - "docs/include/terraform.md"

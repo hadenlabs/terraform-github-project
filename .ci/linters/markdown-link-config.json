@@ -1,0 +1,22 @@
+{
+  "baseUrl": "https://github.com/hadenlabs/terraform-github-project",
+  "ignorePatterns": [
+    {
+      "pattern": "^https://hadenlabs.com"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^/docs",
+      "replacement": "{{BASEURL}}/docs"
+    },
+    {
+      "pattern": "^/example",
+      "replacement": "{{BASEURL}}/example"
+    }
+  ],
+  "timeout": "20s",
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206, 202]
+}
